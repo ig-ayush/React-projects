@@ -1,6 +1,7 @@
   import { useState } from "react";
   import ColorPicker from "./Components/ColorPicker";
   import DigitalClock from "./Components/DigitalClock";
+  import StopWatch from "./Components/StopWatch";
 
   function App() {
 
@@ -17,8 +18,9 @@
       setProject(project);
     }
 
-    const stopWatch = ()=>{
+    const stopWatch = (project)=>{
       setBordeB("btn-3");
+      setProject(project)
     }
 
     function projectDisplay() {
@@ -33,6 +35,11 @@
           return (
             <DigitalClock />
           )
+
+          case "stop-watch" :
+            return (
+              <StopWatch />
+            )
         default : null
       }
     }
@@ -63,7 +70,7 @@
 
             <button id="btn-3"
                className={`cursor-pointer ${borderB == 'btn-3' ? 'border-b' : `border-none`} p-1`} 
-               onClick={() => stopWatch()}
+               onClick={() => stopWatch("stop-watch")}
                 >Stop Watch
             </button>
 
