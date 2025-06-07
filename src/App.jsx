@@ -1,5 +1,6 @@
   import { useState } from "react";
   import ColorPicker from "./Components/ColorPicker";
+  import DigitalClock from "./Components/DigitalClock";
 
   function App() {
 
@@ -11,8 +12,9 @@
       setProject(project);
     }
 
-    const digitalClock = ()=>{
+    const digitalClock = (project)=>{
       setBordeB("btn-2");
+      setProject(project);
     }
 
     const stopWatch = ()=>{
@@ -27,6 +29,10 @@
           <ColorPicker />
         );
         
+        case "Digital-clock" :
+          return (
+            <DigitalClock />
+          )
         default : null
       }
     }
@@ -51,7 +57,7 @@
 
             <button id="btn-2" 
               className={`cursor-pointer ${borderB == 'btn-2' ? 'border-b' : `border-none`} p-1`}
-              onClick={() => digitalClock()}
+              onClick={() => digitalClock("Digital-clock")}
                 >Digital Clock
             </button>
 
