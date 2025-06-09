@@ -27,8 +27,8 @@ function DigitalClock() {
     return(
         <>
             <main id="clock" className="w-screen h-auto m-2 flex justify-center items-center">
-                <div id="cloc-con" className="w-1/3 border h-[30vh] flex justify-center items-center rounded-xl">
-                    <h1 id="time" className="font-[Orbitron] text-8xl" >
+                <div id="cloc-con" className="xl:w-1/3 lg:w-1/2 w-[90%] border lg:h-[30vh] h-[20vh] flex justify-center items-center rounded-xl">
+                    <h1 id="time" className="font-[Orbitron] lg:text-8xl text-7xl" >
                         {DisplayTime()} <span className="text-2xl">{isPm ? `PM` : `AM`}</span>
                     </h1>
                 </div>

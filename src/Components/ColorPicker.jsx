@@ -17,11 +17,11 @@ function ColorPicker() {
     return(
         <>
             <main id="container" className="w-screen h-auto flex justify-center items-center">
-                <div id="color-picker" className="w-1/3 border p-5 flex flex-col justify-center items-center gap-5">
-                    <div id="display-color" className=" w-[80%] h-[30vh] border rounded-lg flex justify-center items-center" style={{backgroundColor: color}}>
-                        <h1 className="text-3xl " ref={notice}>{notice.current == "" ? "Pick the Color" : color}</h1>
+                <div id="color-picker" className="lg:w-1/3 w-[70%] border p-5 flex flex-col justify-center items-center gap-5">
+                    <div id="display-color" className=" w-[80%] lg:h-[30vh] h-[20vh]  border rounded-lg flex justify-center items-center" style={{backgroundColor: color}}>
+                        <h1 className="lg:text-3xl text-xl" ref={notice}>{notice.current == "" ? "Pick the Color" : color}</h1>
                     </div>
-                    <div id="get-color" className="flex">
+                    <div id="get-color" className="flex justify-center w-[80%]">
                         <input type="text" className="border outline-none text-center text-lg" value={color}  readOnly ref={outputColor}/>
                         <button id="copy" className={`p-1 border w-20 font-bold bg-black`} onClick={copyColor}>Copy</button>
                     </div>

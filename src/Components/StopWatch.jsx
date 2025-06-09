@@ -53,17 +53,17 @@ function StopWatch() {
     return (
           <>
             <main id="clock" className="w-screen h-auto m-2 flex  justify-center items-center">
-                <div id="cloc-con" className="w-1/3 border h-[40vh] flex flex-col gap-5 justify-center items-center rounded-xl">
-                    <h1 id="time" className="font-[Orbitron] text-6xl" >
+                <div id="cloc-con" className="xl:w-1/3 lg:w-1/2 w-[90%] border lg:h-[40vh] h-[30vh] flex flex-col gap-5 justify-center items-center rounded-xl">
+                    <h1 id="time" className="font-[Orbitron] xl:text-6xl lg:text-5xl text-4xl p-3" >
                         {DisplayTimer()}
                     </h1>
-                    <div id="oparation" className="flex gap-8 mt-5 text-xl">
+                    <div id="oparation" className="flex justify-center gap-8 mt-5 lg:text-xl text-lg p-3 lg:w-full w-[70%]">
                         <button id="start" 
-                            className="border w-20 p-1 rounded-lg hover:bg-white hover:text-black transition-colors duration-400"
+                            className="border w-20 lg:p-1 p-2.5 rounded-lg hover:bg-white hover:text-black transition-colors duration-400"
                             onClick={startTimer}
                         >Start</button>
-                        <button id="stop" className="border w-20 p-1 rounded-lg hover:bg-white hover:text-black transition-colors duration-400" onClick={stopTimer}>Stop</button>
-                        <button id="reset" className="border w-20 p-1 rounded-lg hover:bg-white hover:text-black transition-colors duration-400" onClick={resetTimer}>Reset</button>
+                        <button id="stop" className="border w-20 lg:p-1 p-2.5 rounded-lg hover:bg-white hover:text-black transition-colors duration-400" onClick={stopTimer}>Stop</button>
+                        <button id="reset" className="border w-20 lg:p-1 p-2.5 rounded-lg hover:bg-white hover:text-black transition-colors duration-400" onClick={resetTimer}>Reset</button>
                     </div>
                 </div>
             </main>

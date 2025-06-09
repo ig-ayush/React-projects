@@ -47,14 +47,14 @@
     return(
       <>
         <nav id="Heading" className="p-10 flex justify-center w-screen h-auto items-center">
-          <h1 className="text-3xl border-b pt-5 ">Practice React Projects</h1>
+          <h1 className="lg:text-3xl text-xl border-b pt-5 ">Practice React Projects</h1>
         </nav>
 
       {/* Select Project  */}
 
         <main className="w-screen flex justify-center mt-5  p-5">
           <div id="projects" 
-            className="w-screen flex justify-evenly text-lg">
+            className="w-screen flex justify-evenly md:text-lg text-md">
               
             <button id="btn-1" 
               className =  {`cursor-pointer ${borderB == 'btn-1' ? 'border-b' : 'border-none'} p-1`} 
