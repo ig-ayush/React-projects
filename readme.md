@@ -1,12 +1,61 @@
-# React + Vite
+# 🚀 React Practice Projects with Tailwind CSS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a collection of small, responsive UI tools built using **React.js** and **Tailwind CSS**. It's designed as a practice hub to build and explore React basics while implementing modern styling and interactivity.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔧 Tech Stack
 
-## Expanding the ESLint configuration
+- **React.js** (with Hooks)
+- **Tailwind CSS**
+- **JavaScript (ES6+)**
+- **Responsive Design** principles
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📁 Projects Included
+
+### 🎨 1. Color Picker
+
+A minimal color selection tool that allows users to pick and copy color values.
+
+#### ✨ Features:
+- Interactive color picker input
+- Displays the selected color
+- **Copy to clipboard** button for hex code
+- Responsive design
+
+---
+
+### ⏰ 2. Digital Clock
+
+A live, real-time clock showing the current time in **12-hour format**.
+
+#### ✨ Features:
+- Auto-updating clock using `useEffect` and `setInterval`
+- Displays time in `hh:mm:ss AM/PM` format
+- Responsive and minimal design
+
+---
+
+### ⏱️ 3. Stopwatch
+
+A functional stopwatch with basic controls.
+
+#### ✨ Features:
+- **Start**, **Stop**, and **Reset** functionality
+- Time formatted as `mm:ss`
+- Built using `useState` and `useEffect`
+- Clean responsive layout
+
+---
+
+## 🧑‍💻 Getting Started
+
+To run the project locally:
+
+```bash
+git clone https://github.com/ig-ayush/React-projects.git
+cd react-practice-projects
+npm install
+npm start
