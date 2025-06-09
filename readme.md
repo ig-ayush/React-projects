@@ -1,4 +1,4 @@
-# 🚀 React Practice Projects with Tailwind CSS
+# React Practice Projects with Tailwind CSS
 
 This project is a collection of small, responsive UI tools built using **React.js** and **Tailwind CSS**. It's designed as a practice hub to build and explore React basics while implementing modern styling and interactivity.
 
@@ -13,7 +13,7 @@ This project is a collection of small, responsive UI tools built using **React.j
 
 ---
 
-## 📁 Projects Included
+##  Projects Included
 
 ### 🎨 1. Color Picker
 
