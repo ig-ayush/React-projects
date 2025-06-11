@@ -58,4 +58,4 @@ To run the project locally:
 git clone https://github.com/ig-ayush/React-projects.git
 cd react-practice-projects
 npm install
-npm start
+npm run dev
